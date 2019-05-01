@@ -1,4 +1,6 @@
 #!/bin/bash
+docker_init_path=`pwd`
+
 # get the build tools 
 sudo yum groupinstall "Development Tools" -y
 
@@ -26,4 +28,6 @@ cd tmux-2.7
 sudo ./configure && sudo make
 sudo make install
 
-
+cp -r $docker_init_path/.tmux ~/
+cp $docker_init_path/.tmux.confg ~/
+cp $docker_init_path/.vimrc ~/
