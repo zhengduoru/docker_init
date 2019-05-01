@@ -29,5 +29,5 @@ sudo ./configure && sudo make
 sudo make install
 
 cp -r $docker_init_path/.tmux ~/
-cp $docker_init_path/.tmux.confg ~/
+cp $docker_init_path/.tmux.config ~/
 cp $docker_init_path/.vimrc ~/
